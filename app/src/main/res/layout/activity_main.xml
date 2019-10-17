@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#edffff"
+    >
+
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seniore's Pizza Restaurant"
+        android:textColor="#000"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:background="#bbdefb"
+        android:padding="16dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/pizza"
+        android:scaleType="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#89abc6"
+        android:padding="24dp"
+        >
+        <ImageView
+            android:id="@+id/logo"
+            android:src="@drawable/seniores_pizza"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seniore's Pizza Restaurant"
+            android:layout_toRightOf="@id/logo"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+        <TextView
+            android:id="@+id/downloaded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_toRightOf="@id/logo"
+            android:text="Address: 176 Bedford Dr NE #7, Calgary, AB T3K 2M9"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            />
+        <TextView
+            android:id="@+id/released"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours: 11 am - 2am"
+            android:layout_toRightOf="@id/logo"
+            android:layout_below="@id/downloaded"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+        />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Us"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: (403) 451-0101"
+        android:textColor="#000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
